@@ -8,7 +8,7 @@ A Jest runner for Postman's [Newman](https://github.com/postmanlabs/newman) CLI 
 
 - [Purpose](#purpose)
 - [Install](#install)
-- [Tests](#tests)
+- [Running tests](#running-tests)
 - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -37,7 +37,7 @@ module.exports = {
 npx jest -c jest.newman.js
 ```
 
-## Tests
+## Running tests
 
 `jest-runner-newman` runs Newman tests in Node child processes. In addition to
 running a Newman test via the `newman` module, each test needs to send the
@@ -45,18 +45,20 @@ parent process the result of the test run. To make this easier,
 `jest-runner-newman` exports a separate module to specifically handle that:
 
 ```javascript
+# my-collection.test.js
+
 const {handleResult} = require('jest-runner-newman/handle-result')
 const newman = require('newman');
 
 module.exports = newman.run({
-  collection: `[colllection-url]`,
+  collection: `[collection-url]`,
   environment: `[envinroment-url]`,
   reporters: ['cli'],
   // any other newman configs
 }, (err, result) => {
   handleResult(err, result);
 
-  // whatever else you may want to output here
+  // anything else you want
 })
 ```
 
