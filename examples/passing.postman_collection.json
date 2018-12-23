@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "38ac76b0-04ce-420a-bf0d-430f4fca0f9a",
+		"name": "Demo Passing Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET pass",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "89f8d1ac-ecf1-4b48-9524-89eed34914c3",
+						"exec": [
+							"pm.test('responds with 200', () => {",
+							"    pm.response.to.have.status(200)",
+							"})",
+							"",
+							"pm.test('returns correct body', () => {",
+							"    const response = pm.response.json();",
+							"    ",
+							"    pm.expect(response.ok).to.eql(true);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:1337",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337"
+				},
+				"description": "A deliberately failing test"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "393d61b7-68d9-4b5a-87a8-7429d519ec77",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f6ac34a7-eb86-4a97-b4a9-596ff71aa805",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
