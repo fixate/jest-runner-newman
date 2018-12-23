@@ -1,7 +1,9 @@
 module.exports = {
+  ...require('./jest.common'),
+
   displayName: 'newman',
 
-  runner: require.resolve('../src/index.js'),
+  runner: '<rootDir>/src/index.js',
 
-  testMatch: ['src/**/*.test.js'],
+  testMatch: ['<rootDir>/examples/**/*.test.js'],
 };
