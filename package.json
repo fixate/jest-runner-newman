@@ -35,7 +35,12 @@
     "jest": ">=22.0.0",
     "newman": "*"
   },
-  "keywords": [],
+  "keywords": [
+    "jest",
+    "jest-runner",
+    "postman",
+    "newman"
+  ],
   "author": "",
   "license": "MIT",
   "repository": {
