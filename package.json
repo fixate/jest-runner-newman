@@ -1,0 +1,49 @@
+{
+  "name": "jest-runner-newman",
+  "version": "0.0.0-development",
+  "description": "A Jest runner for Postman's Newman CLI tool",
+  "main": "src/index.js",
+  "scripts": {
+    "server": "node examples/app",
+    "test": "is-ci 'test:ci' 'test:dev'",
+    "test:dev": "node examples/app & jest --watch",
+    "test:ci": "start-server-and-test server 1337 test:watch",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "commitizen": "3.0.5",
+    "conventional-changelog": "3.0.5",
+    "conventional-changelog-cli": "2.0.11",
+    "create-jest-runner": "0.4.1",
+    "cz-conventional-changelog": "2.1.0",
+    "doctoc": "1.4.0",
+    "eslint": "5.11.0",
+    "eslint-config-prettier": "3.3.0",
+    "eslint-plugin-prettier": "3.0.0",
+    "husky": "1.2.1",
+    "is-ci-cli": "1.1.1",
+    "jest": "23.6.0",
+    "jest-runner-eslint": "0.7.1",
+    "lint-staged": "8.1.0",
+    "newman": "4.2.3",
+    "prettier": "1.15.3",
+    "semantic-release": "^15.13.1",
+    "start-server-and-test": "1.7.11"
+  },
+  "peerDependencies": {
+    "jest": ">=22.0.0",
+    "newman": "*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fixate/jest-runner-newman.git"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
