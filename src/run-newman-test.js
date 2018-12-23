@@ -1,4 +1,3 @@
-const newman = require('newman');
 const {fork} = require('child_process');
 const {fail, pass} = require('create-jest-runner');
 
@@ -15,7 +14,7 @@ const handleSummary = ({end, resolve, start, summary, testPath}) => {
             path: testPath,
             title: `Collection: ${collection.info.name}`,
           },
-        }),
+        })
       )
     : handleError({
         end,
@@ -36,7 +35,7 @@ const handleError = ({end, error, resolve, start, testPath}) => {
         errorMessage: error,
         title: 'Check for ⚔️ 🏃',
       },
-    }),
+    })
   );
 };
 
