@@ -5,5 +5,5 @@ module.exports = {
 
   testEnvironment: 'jest-environment-node',
 
-  testMatch: ['<rootDir>/**/?(*.)test.js'],
+  testMatch: ['<rootDir>/src/**/?(*.)test.js'],
 };
