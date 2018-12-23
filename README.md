@@ -15,7 +15,7 @@ A Jest runner for Postman's [Newman](https://github.com/postmanlabs/newman) CLI 
 
 ## Purpose
 
-Easily maintain and run your Postman collections using Newman and Jest.
+Easily run automated tests for your Postman collections using Newman and Jest.
 
 ## Install
 
