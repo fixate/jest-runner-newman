@@ -4,6 +4,7 @@
   "description": "A Jest runner for Postman's Newman CLI tool",
   "main": "src/index.js",
   "scripts": {
+    "commit": "git-cz",
     "server": "node examples/app",
     "test": "is-ci 'test:ci' 'test:dev'",
     "test:dev": "node examples/app & jest --watch",
@@ -44,6 +45,11 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
     }
   }
 }
