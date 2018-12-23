@@ -63,4 +63,5 @@ const runTest = ({testPath}) => {
     });
   });
 };
+
 module.exports = runTest;
