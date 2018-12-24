@@ -7,8 +7,10 @@
     "commit": "git-cz",
     "server": "node examples/app",
     "test": "is-ci 'test:ci' 'test:dev'",
-    "test:dev": "node examples/app & jest --watch",
-    "test:ci": "start-server-and-test server 1337 test:watch",
+    "test:ci": "start-server-and-test server 1337 test:once",
+    "test:dev": "start-server-and-test server 1337 test:watch",
+    "test:once": "jest",
+    "test:watch": "npm run test:once -- --watch",
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
