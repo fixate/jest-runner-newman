@@ -13,11 +13,13 @@
     "test:watch": "npm run test:once -- --watch",
     "semantic-release": "semantic-release"
   },
+  "dependencies": {
+    "create-jest-runner": "0.4.1"
+  },
   "devDependencies": {
     "commitizen": "3.0.5",
     "conventional-changelog": "3.0.5",
     "conventional-changelog-cli": "2.0.11",
-    "create-jest-runner": "0.4.1",
     "cz-conventional-changelog": "2.1.0",
     "doctoc": "1.4.0",
     "eslint": "5.11.0",

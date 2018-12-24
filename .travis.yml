@@ -12,6 +12,8 @@ jobs:
   include:
     - stage: test
       script: npm test
+    - stage: copy
+      script: cp src/handle-request.js handle-request.js
     - stage: npm release
       node_js: '10'
       script: echo "Deploying to npm ..."
