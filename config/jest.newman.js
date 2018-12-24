@@ -3,7 +3,7 @@ module.exports = {
 
   displayName: 'newman',
 
-  runner: '<rootDir>/src/index.js',
+  runner: require.resolve('../src/index.js'),
 
   testMatch: ['<rootDir>/examples/**/*.test.js'],
 };
