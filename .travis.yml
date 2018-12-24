@@ -14,8 +14,9 @@ jobs:
       script: npm test
     - stage: npm release
       node_js: '10'
-      script: mv src/handle-result.js handle-result.js
-      script: echo "Deploying to npm ..."
+      script:
+        - mv src/handle-result.js handle-result.js
+        - echo "Deploying to npm ..."
       deploy:
         provider: script
         skip_cleanup: true
