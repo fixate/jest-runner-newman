@@ -1,6 +1,6 @@
 {
   "name": "jest-runner-newman",
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "description": "A Jest runner for Postman's Newman CLI tool",
   "main": "src/index.js",
   "scripts": {

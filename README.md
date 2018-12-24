@@ -1,5 +1,7 @@
 # Jest Runner Newman
 
+[![Build Status](https://travis-ci.org/fixate/jest-runner-newman.svg?branch=master)](https://travis-ci.org/fixate/jest-runner-newman)
+
 A Jest runner for Postman's [Newman](https://github.com/postmanlabs/newman) CLI tool.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
