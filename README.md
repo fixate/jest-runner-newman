@@ -1,6 +1,7 @@
 # Jest Runner Newman
 
 [![Build Status](https://travis-ci.org/fixate/jest-runner-newman.svg?branch=master)](https://travis-ci.org/fixate/jest-runner-newman)
+[![npm version](https://badge.fury.io/js/jest-runner-newman.svg)](https://badge.fury.io/js/jest-runner-newman)
 
 A Jest runner for Postman's [Newman](https://github.com/postmanlabs/newman) CLI tool.
 
