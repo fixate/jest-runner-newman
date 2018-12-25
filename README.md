@@ -16,6 +16,8 @@ A Jest runner for Postman's [Newman](https://github.com/postmanlabs/newman) CLI 
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+<img src="assets/jest-runner-newman-demo.gif" alt="cli example of jest-runner-newman">
+
 ## Purpose
 
 Easily run automated tests for your Postman collections using Newman and Jest.
