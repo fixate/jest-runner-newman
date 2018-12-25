@@ -5,6 +5,10 @@
 
 A Jest runner for Postman's [Newman](https://github.com/postmanlabs/newman) CLI tool.
 
+<p align="center">
+  <img src="assets/jest-runner-newman-demo.gif" width="50%" alt="cli example of jest-runner-newman">
+</p>
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
@@ -15,10 +19,6 @@ A Jest runner for Postman's [Newman](https://github.com/postmanlabs/newman) CLI 
 - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-<p align="center">
-  <img src="assets/jest-runner-newman-demo.gif" width="50%" alt="cli example of jest-runner-newman">
-</p>
 
 ## Purpose
 
