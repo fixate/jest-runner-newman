@@ -59,7 +59,7 @@ const newman = require('newman');
 
 module.exports = newman.run({
   collection: `[collection-url]`,
-  environment: `[envinroment-url]`,
+  environment: `[environment-url]`,
   reporters: ['cli'],
   // any other newman configs
 }, (err, result) => {
