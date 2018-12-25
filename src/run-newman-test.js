@@ -3,6 +3,7 @@ const {fail, pass} = require('create-jest-runner');
 
 const handleSummary = ({end, start, summary, testPath}) => {
   const {run, collection} = summary;
+  const title = `Collection: ${collection.info.name}`;
   const testsPassed = run.failures.length === 0;
 
   return testsPassed
@@ -11,7 +12,7 @@ const handleSummary = ({end, start, summary, testPath}) => {
         start,
         test: {
           path: testPath,
-          title: `Collection: ${collection.info.name}`,
+          title,
         },
       })
     : handleError({
@@ -19,17 +20,18 @@ const handleSummary = ({end, start, summary, testPath}) => {
         errorMessage: `${run.failures.length} tests failed`,
         start,
         testPath,
+        title,
       });
 };
 
-const handleError = ({end, error, start, testPath}) => {
+const handleError = ({end, error, start, testPath, title}) => {
   return fail({
     end,
     start,
     test: {
       path: testPath,
       errorMessage: error,
-      title: 'Check for ⚔️ 🏃',
+      title,
     },
   });
 };
@@ -53,7 +55,7 @@ const runTest = ({testPath}) => {
       }
 
       if (error) {
-        resolve(handleError({start, end, testPath, error: error.help}));
+        resolve(handleError({start, end, testPath, error: error.help, title: 'Error'}));
       }
     });
   });
