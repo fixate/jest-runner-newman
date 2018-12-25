@@ -9,6 +9,7 @@ __tests__
 jest.config.js
 examples
 config
+assets
 
 browser-tests
 markdown
