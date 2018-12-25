@@ -16,7 +16,9 @@ A Jest runner for Postman's [Newman](https://github.com/postmanlabs/newman) CLI 
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-<img src="assets/jest-runner-newman-demo.gif" alt="cli example of jest-runner-newman">
+<p align="center">
+  <img src="assets/jest-runner-newman-demo.gif" width="50%" alt="cli example of jest-runner-newman">
+</p>
 
 ## Purpose
 
