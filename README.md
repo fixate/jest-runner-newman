@@ -27,7 +27,7 @@ Easily run automated tests for your Postman collections using Newman and Jest.
 ## Install
 
 ```bash
-$ npm install -D jest-runner-newman
+$ npm install -D jest-runner-newman newman
 ```
 
 ```javascript
